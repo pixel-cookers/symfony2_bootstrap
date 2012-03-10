@@ -60,6 +60,11 @@ class BootstrapController extends Controller
 
         $form7 = $this->createForm(new ExampleExtendedViewFormType());
 
+        $request = $this->get('request');
+        if ('POST' == $request->getMethod()) {
+            $form1->bindRequest($request);
+        }
+
         return array(
             'form1' => $form1->createView(),
             'form2' => $form2->createView(),
