@@ -1,0 +1,13 @@
+_welcome:
+    pattern:  /
+    defaults: { _controller: PixelCoreBundle:Default:index }
+
+PixelCoreBundle:
+    resource: "@PixelCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal

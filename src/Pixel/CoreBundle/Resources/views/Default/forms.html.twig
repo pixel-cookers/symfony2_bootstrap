@@ -1,0 +1,180 @@
+{% extends 'PixelCoreBundle::layout.html.twig' %}
+
+{% block title %}Forms{% endblock %}
+
+{% block content_header '' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="span8">
+        <form class="form-horizontal">
+            <fieldset>    	          <legend>Mopa bootstrap example extended forms</legend>
+                <div class="control-group"><label for="mopa_bootstrap_example_extended_forms_textfield1" class=" required control-label">
+                    Form sizes
+                    *        </label><div class="controls"><input type="text" id="mopa_bootstrap_example_extended_forms_textfield1" name="mopa_bootstrap_example_extended_forms[textfield1]" required="required" class="span1" placeholder="span1" value=""></div></div><div class="control-group"><div class="controls"><input type="text" id="mopa_bootstrap_example_extended_forms_textfield2" name="mopa_bootstrap_example_extended_forms[textfield2]" required="required" class="span2" placeholder="span2" value=""></div></div><div class="control-group"><div class="controls"><input type="text" id="mopa_bootstrap_example_extended_forms_textfield3" name="mopa_bootstrap_example_extended_forms[textfield3]" required="required" class="span3" placeholder="span3" value=""></div></div><div class="control-group"><div class="controls"><select id="mopa_bootstrap_example_extended_forms_select1" name="mopa_bootstrap_example_extended_forms[select1]" required="required" class="span1"><option value="1">one</option><option value="2">two</option></select></div></div><div class="control-group"><div class="controls"><select id="mopa_bootstrap_example_extended_forms_select2" name="mopa_bootstrap_example_extended_forms[select2]" required="required" class="span2"><option value="1">one</option><option value="2">two</option></select></div></div><div class="control-group"><div class="controls"><select id="mopa_bootstrap_example_extended_forms_select3" name="mopa_bootstrap_example_extended_forms[select3]" required="required" class="span3"><option value="1">one</option><option value="2">two</option></select></div></div><div class="control-group"><label for="mopa_bootstrap_example_extended_forms_Prepended Text" class=" required control-label">
+                    Prepended text
+                    *        </label><div class="controls"><div class="input-prepend"><span class="add-on">@</span><input type="text" id="mopa_bootstrap_example_extended_forms_Prepended Text" name="mopa_bootstrap_example_extended_forms[Prepended Text]" required="required" class="span1" placeholder="span1" value=""></div></div></div><div class="control-group"><label for="mopa_bootstrap_example_extended_forms_Prepended Icon" class=" required control-label">
+                    Prepended icon
+                    *        </label><div class="controls"><div class="input-prepend"><span class="add-on"><i class="icon-headphones"></i></span><input type="text" id="mopa_bootstrap_example_extended_forms_Prepended Icon" name="mopa_bootstrap_example_extended_forms[Prepended Icon]" required="required" class="span1" placeholder="span1" value=""></div></div></div><div class="control-group"><label for="mopa_bootstrap_example_extended_forms_Appended Text" class=" required control-label">
+                    Appended text
+                    *        </label><div class="controls"><div class="input-append"><input type="text" id="mopa_bootstrap_example_extended_forms_Appended Text" name="mopa_bootstrap_example_extended_forms[Appended Text]" required="required" class="span1" placeholder="span1" value=""><span class="add-on">.00</span></div></div></div><div class="control-group"><label for="mopa_bootstrap_example_extended_forms_Appended Icon" class=" required control-label">
+                    Appended icon
+                    *        </label><div class="controls"><div class="input-append"><input type="text" id="mopa_bootstrap_example_extended_forms_Appended Icon" name="mopa_bootstrap_example_extended_forms[Appended Icon]" required="required" class="span1" placeholder="span1" value=""><span class="add-on"><i class="icon-pencil"></i></span></div></div></div><div class="control-group "><label class=" required control-label">
+                    Inline checkboxes
+                    *        </label><div class="controls"><label class="inline checkbox"><input type="checkbox" id="mopa_bootstrap_example_extended_forms_Checkboxes Inline_1" name="mopa_bootstrap_example_extended_forms[Checkboxes Inline][1]" class="" value="1">
+                    one
+                </label><label class="inline checkbox"><input type="checkbox" id="mopa_bootstrap_example_extended_forms_Checkboxes Inline_2" name="mopa_bootstrap_example_extended_forms[Checkboxes Inline][2]" class="" value="2">
+                    two
+                </label><label class="inline checkbox"><input type="checkbox" id="mopa_bootstrap_example_extended_forms_Checkboxes Inline_3" name="mopa_bootstrap_example_extended_forms[Checkboxes Inline][3]" class="" value="3">
+                    three
+                </label></div></div><div class="control-group "><label class=" required control-label">
+                    Checkboxes
+                    *        </label><div class="controls"><label class=" checkbox"><input type="checkbox" id="mopa_bootstrap_example_extended_forms_Checkboxes_1" name="mopa_bootstrap_example_extended_forms[Checkboxes][1]" class="" value="1">
+                    Option one is this and that—be sure to include why it`s great
+                </label><label class=" checkbox"><input type="checkbox" id="mopa_bootstrap_example_extended_forms_Checkboxes_2" name="mopa_bootstrap_example_extended_forms[Checkboxes][2]" class="" value="2">
+                    Option two can also be checked and included in form results
+                </label><label class=" checkbox"><input type="checkbox" id="mopa_bootstrap_example_extended_forms_Checkboxes_3" name="mopa_bootstrap_example_extended_forms[Checkboxes][3]" class="" value="3">
+                    Option three can—yes, you guessed it—also be checked and included in form results
+                </label><p class="help-block"><strong>Note:</strong> Labels surround all the options for much larger click areas and a more usable form.</p></div></div><div class="control-group "><label class=" required control-label">
+                    Radio buttons
+                    *        </label><div class="controls"><label class=" radio"><input type="radio" id="mopa_bootstrap_example_extended_forms_Radio Buttons_1" name="mopa_bootstrap_example_extended_forms[Radio Buttons]" required="required" class="" value="1">
+                    Option one is this and that—be sure to include why it`s great
+                </label><label class=" radio"><input type="radio" id="mopa_bootstrap_example_extended_forms_Radio Buttons_2" name="mopa_bootstrap_example_extended_forms[Radio Buttons]" required="required" class="" value="2">
+                    Option two can also be checked and included in form results
+                </label><label class=" radio"><input type="radio" id="mopa_bootstrap_example_extended_forms_Radio Buttons_3" name="mopa_bootstrap_example_extended_forms[Radio Buttons]" required="required" class="" value="3">
+                    Option three can—yes, you guessed it—also be checked and included in form results
+                </label></div></div>
+
+            </fieldset>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="reset" class="btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div class="span4">
+        <h3>Everything's included</h3>
+        <p>All things shown here are directly included via the bundle.</p>
+        <p>You can completely drive the appearence within the form classes, and hopefully updates wont change the view!</p>
+        <p>An example: to generate nice inputs with icons you dont write one line of html:</p>
+      <pre class="prettyprint
+         linenums">$builder
+    -&gt;add('Appended Icon', 'text', array(
+        'widget_addon' =&gt; array(
+            'icon'   =&gt; 'pencil',
+            'append' =&gt; true
+        ),
+        'attr' =&gt; array(
+            'class'       =&gt; 'span1',
+            'placeholder' =&gt; 'span1'
+        )
+    ))
+;
+</pre>
+        <p>And in your markup you just need one line: </p>
+<pre class="prettyprint
+ linenums">
+      &lt;form class="form-horizontal"&gt;
+
+      &lt;/form&gt;
+
+</pre>
+        <h3>Absolutely responsive!</h3>
+        <p>Resize your browser to see responsiveness in action, if you make your browser small enough (e.g. as small as a smartphone display) you will see all forms still work and look really good!</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span3">
+        <p>With v2.0, we have lighter and smarter defaults for form styles. No extra markup, just form controls.</p>
+    </div>
+    <div class="span9">
+        <form class="well">
+            <fieldset>    	          <legend>Mopa bootstrap example forms</legend>
+                <input type="hidden" id="mopa_bootstrap_example_forms__token" name="mopa_bootstrap_example_forms[_token]" value="a9f7a4be4a8d1e38c730b367b9b2853522c2b89a"><div class="control-group"><label for="mopa_bootstrap_example_forms_textfield" class=" required control-label">
+                    Label name
+                    *        </label><div class="controls"><input type="text" id="mopa_bootstrap_example_forms_textfield" name="mopa_bootstrap_example_forms[textfield]" required="required" placeholder="Some text" value=""><p class="help-inline">Associated help text!</p></div></div><div class="control-group "><div class="controls"><label class="inline checkbox"><input type="checkbox" id="mopa_bootstrap_example_forms_Checkboxes Inline_1" name="mopa_bootstrap_example_forms[Checkboxes Inline][1]" class="" value="1">
+                    one
+                </label><label class="inline checkbox"><input type="checkbox" id="mopa_bootstrap_example_forms_Checkboxes Inline_2" name="mopa_bootstrap_example_forms[Checkboxes Inline][2]" class="" value="2">
+                    two
+                </label><p class="help-block">Expanded and multiple (inline)</p></div></div>
+
+            </fieldset>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span3">
+        <p>Reflecting default WebKit styles, just add <code>.form-search</code> for extra rounded search fields.</p>
+    </div>
+    <div class="span9">
+        <form class="well form-search">
+            <input type="hidden" id="mopa_bootstrap_example_search__token" name="mopa_bootstrap_example_search[_token]" value="a9f7a4be4a8d1e38c730b367b9b2853522c2b89a"><input type="text" id="mopa_bootstrap_example_search_search" name="mopa_bootstrap_example_search[search]" required="required" placeholder="search" class="input-medium search-query" value="">
+
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span3">
+        <p>Inputs are block level to start. For <code>.form-inline</code> and <code>.form-horizontal</code>, we use inline-block.</p>
+    </div>
+    <div class="span9">
+        <form class="well form-search">
+            <input type="hidden" id="MopaBootstraBundle_Inline_Possibilies__token" name="MopaBootstraBundle_Inline_Possibilies[_token]" value="a9f7a4be4a8d1e38c730b367b9b2853522c2b89a"><input type="text" id="MopaBootstraBundle_Inline_Possibilies_Email" name="MopaBootstraBundle_Inline_Possibilies[Email]" required="required" placeholder="Password" class="input-small" value=""><input type="text" id="MopaBootstraBundle_Inline_Possibilies_Password" name="MopaBootstraBundle_Inline_Possibilies[Password]" required="required" placeholder="Email" class="input-small" value="">
+
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span8">
+        <form action="#" class="form-horizontal" method="post">
+            <fieldset>    	          <legend>Mopabootstrabundle choice possibilies</legend>
+                <input type="hidden" id="MopaBootstraBundle_Choice_Possibilies__token" name="MopaBootstraBundle_Choice_Possibilies[_token]" value="a9f7a4be4a8d1e38c730b367b9b2853522c2b89a"><div class="control-group"><label for="MopaBootstraBundle_Choice_Possibilies_Choice" class=" required control-label">
+                    Select list
+                    *        </label><div class="controls"><select id="MopaBootstraBundle_Choice_Possibilies_Choice" name="MopaBootstraBundle_Choice_Possibilies[Choice]" required="required"><option value="1">one</option><option value="2">two</option></select><p class="help-inline">Default settings</p></div></div><div class="control-group"><label for="MopaBootstraBundle_Choice_Possibilies_Choice multiple" class=" required control-label">
+                    Multicon-select
+                    *        </label><div class="controls"><select id="MopaBootstraBundle_Choice_Possibilies_Choice multiple" name="MopaBootstraBundle_Choice_Possibilies[Choice multiple][]" required="required" multiple="multiple"><option value="1">one</option><option value="2">two</option></select><p class="help-inline">Multiple</p></div></div><div class="control-group "><label class=" required control-label">
+                    Radio buttons
+                    *        </label><div class="controls"><label class=" radio"><input type="radio" id="MopaBootstraBundle_Choice_Possibilies_Radio Buttons_1" name="MopaBootstraBundle_Choice_Possibilies[Radio Buttons]" required="required" class="" value="1">
+                    one
+                </label><label class=" radio"><input type="radio" id="MopaBootstraBundle_Choice_Possibilies_Radio Buttons_2" name="MopaBootstraBundle_Choice_Possibilies[Radio Buttons]" required="required" class="" value="2">
+                    two
+                </label><p class="help-inline">Expanded</p></div></div><div class="control-group "><label class=" required control-label">
+                    Checkboxes
+                    *        </label><div class="controls"><label class=" checkbox"><input type="checkbox" id="MopaBootstraBundle_Choice_Possibilies_Checkboxes_1" name="MopaBootstraBundle_Choice_Possibilies[Checkboxes][1]" class="" value="1">
+                    one
+                </label><label class=" checkbox"><input type="checkbox" id="MopaBootstraBundle_Choice_Possibilies_Checkboxes_2" name="MopaBootstraBundle_Choice_Possibilies[Checkboxes][2]" class="" value="2">
+                    two
+                </label><p class="help-inline">Expanded and multiple</p></div></div><div class="control-group "><label class=" required control-label">
+                    Inline checkboxes
+                    *        </label><div class="controls"><label class="inline checkbox"><input type="checkbox" id="MopaBootstraBundle_Choice_Possibilies_Checkboxes Inline_1" name="MopaBootstraBundle_Choice_Possibilies[Checkboxes Inline][1]" class="" value="1">
+                    one
+                </label><label class="inline checkbox"><input type="checkbox" id="MopaBootstraBundle_Choice_Possibilies_Checkboxes Inline_2" name="MopaBootstraBundle_Choice_Possibilies[Checkboxes Inline][2]" class="" value="2">
+                    two
+                </label><p class="help-inline">Expanded and multiple (inline)</p></div></div>
+
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="span4">
+        <h3>Choice form widgets</h3>
+        <p>Here we try to show all possible choice form widgets</p>
+        <hr>
+        <p>And there is a lot to do</p>
+    </div>
+</div>
+
+{% endblock content %}

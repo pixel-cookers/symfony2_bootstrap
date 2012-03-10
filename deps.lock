@@ -1,0 +1,17 @@
+symfony v2.0.11
+twig v1.6.0
+monolog 1.0.2
+doctrine-common 2.1.4
+doctrine-dbal 2.1.6
+doctrine 2.1.6
+swiftmailer v4.1.5
+assetic v1.0.2
+twig-extensions 
+metadata 1.0.0
+SensioFrameworkExtraBundle 638f545b7020b9e9d5944a7e3167f60ed848250d
+JMSSecurityExtraBundle 541a4c242328dc04b99540c75346cc74a7c0cfb5
+SensioDistributionBundle 20b66a408084ad8752f98e50f10533f5245310bf
+SensioGeneratorBundle b1ccb78c1743f30817b0fce9bb5c6baff6ed7bf8
+AsseticBundle v1.0.0RC1
+MopaBootstrapBundle e5e98134e24ea08b9078a70af4ce4e45e6a36d7c
+twittersbootstrap b410eeb6dd4025718cddfc435c507bad7d47af1b
