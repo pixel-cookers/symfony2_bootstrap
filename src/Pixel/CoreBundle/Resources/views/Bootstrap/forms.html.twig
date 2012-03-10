@@ -1,0 +1,205 @@
+{% extends 'PixelCoreBundle::layout.html.twig' %}
+
+{% block title %}Forms{% endblock %}
+
+{% block content_header '' %}
+
+{% block content %}
+
+    <ul id="tab" class="nav nav-tabs">
+        <li class="active"><a href="#tab-1" data-toggle="tab">Extended</a></li>
+        <li><a href="#tab-5" data-toggle="tab">Extended</a></li>
+        <li><a href="#tab-2" data-toggle="tab">Horizontal</a></li>
+        <li><a href="#tab-3" data-toggle="tab">Choices</a></li>
+        <li><a href="#tab-4" data-toggle="tab">Others</a></li>
+    </ul>
+
+    <div id="tabs" class="tab-content">
+
+        <section class="tab-pane fade in active" id="tab-1">
+            <div class="row">
+                <div class="span8">
+                    <form action="" method="post" {{ form_enctype(form1) }}>
+                        {{ form_widget(form1) }}
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="reset" class="btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="span4">
+                    <h3>Everything's included</h3>
+                    <p>All things shown here are directly included via the bundle.</p>
+                    <p>You can completely drive the appearence within the form classes, and hopefully updates wont
+                        change the view!</p>
+                    <p>An example: to generate nice inputs with icons you dont write one line of html:</p>
+                    <pre class="prettyprint linenums">
+$builder
+    ->add('Appended Icon', 'text', array(
+        'widget_addon' => array(
+            'icon'   => 'pencil',
+            'append' => true
+        ),
+        'attr' => array(
+            'class'       => 'span1',
+            'placeholder' => 'span1'
+        )
+    ))
+;
+                    </pre>
+                    <p>And in your markup you just need one line: </p>
+                    <pre class="prettyprint linenums">
+{% raw %}
+&lt;form class=&quot;form-horizontal&quot;&gt;
+    {{ form_widget(form) }}
+&lt;/form&gt;
+{% endraw %}
+                    </pre>
+                    <h3>Absolutely responsive!</h3>
+
+                    <p>Resize your browser to see responsiveness in action, if you make your browser small enough (e.g.
+                        as small as a smartphone display) you will see all forms still work and look really good!</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tab-pane fade in active" id="tab-5">
+            <div class="row">
+                <div class="span8">
+                    <form class="form-horizontal">
+                        {{ form_row(form7.textfield1, {'attr': {'class': 'span1', 'placeholder': 'span1'}}) }}
+                        {{ form_row(form7.textfield2, {'attr': {'class': 'span2', 'placeholder': 'span2'}}) }}
+                        {{ form_row(form7.textfield3, {'attr': {'class': 'span3', 'placeholder': 'span3'}}) }}
+                        {{ form_row(form7.select1, {'attr': {'class': 'span1'}}) }}
+                        {{ form_row(form7.select2, {'attr': {'class': 'span2'}}) }}
+                        {{ form_row(form7.select3, {'attr': {'class': 'span3'}}) }}
+                        {{ form_row(form7.prepend1, {'label': 'Prepended Text', 'widget_addon': {'text': '@'}, 'attr': {'class': 'span1', 'placeholder': 'span1'}}) }}
+                        {{ form_row(form7.prepend2, {'label': 'Prepended Icon', 'widget_addon': {'icon': 'headphones'}, 'attr': {'class': 'span3', 'placeholder': 'Which kind of musik?'}}) }}
+                        {{ form_row(form7.append1, {'label': 'Appended Text', 'widget_addon': {'append': true, 'text': '.00'}, 'attr': {'class': 'span1', 'placeholder': 'span1'}}) }}
+                        {{ form_row(form7.append2, {'label': 'Appended Icon', 'widget_addon': {'append': true, 'icon': 'pencil'}, 'attr': {'class': 'span3', 'placeholder': 'Which kind of Books?'}}) }}
+                        {{ form_row(form7.checkboxesinline, {'label': 'Inline Checkboxes', 'widget_type': 'inline'}) }}
+                        {{ form_row(form7.checkboxes, {'label': 'Checkboxes'}) }}
+                        {{ form_row(form7.radiobuttons, {'help_block': '<strong>Note:</strong> Labels surround all the options for much larger click areas and a more usable form.'}) }}
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="reset" class="btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="span4">
+                    <h3>Everything's included</h3>
+                    <p>All things shown here are directly included via the bundle.</p>
+                    <p>You can completely drive the appearence within view too, and hopefully updates wont change the anything!!</p>
+                    <p>An example: to generate a nice input field with appended icon:</p>
+<pre class="prettyprint
+ linenums">
+$builder
+    ->add('appendedicon')
+;
+</pre>
+                    <p>and in your twig template:</p>
+<pre class="prettyprint
+ linenums">{% raw %}
+{{ form_row(form.appendedicon,
+    {'label': 'Appended Icon',
+     'widget_addon': {'append': true,
+                      'icon': 'headphones'},
+     'attr': {'class': 'span3',
+              'placeholder': 'What kind of music do you like?'}
+    }) }}
+    {% endraw %}</pre>
+                    <h3>Detailed Examples!</h3>
+                    <p>Have a look into the <a href="https://github.com/phiamo/MopaBootstrapBundle/blob/master/Resources/views/Examples/extended_view.html.twig">source code</a> of this template and its <a href="https://github.com/phiamo/MopaBootstrapBundle/blob/master/Form/Type/ExampleExtendedViewFormType.php">form class</a> and see how this page is completely view driven</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tab-pane fade" id="tab-2">
+            <div class="row">
+                <div class="span8">
+                    <form class="form-horizontal">
+                        {{ form_widget(form2) }}
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="reset" class="btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="span4">
+                    <h3>What's included</h3>
+                    <p>Shown on the left are some of the default form controls supported</p>
+                    <p>Watch out that every control has a bunch of options to define in the form classes</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tab-pane fade" id="tab-3">
+            <div class="row">
+
+                <div class="span8">
+                    <form action="#" class="form-horizontal" method="post" {{ form_enctype(form6) }}>
+                        {{ form_widget(form6) }}
+
+                        <div class="form-actions">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="span4">
+                    <h3>Choice form widgets</h3>
+                    <p>Here we try to show all possible choice form widgets</p>
+                    <hr>
+                    <p>And there is a lot to do</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tab-pane fade" id="tab-4">
+            <div class="row">
+                <div class="span3">
+                    <p>With v2.0, we have lighter and smarter defaults for form styles. No extra markup, just form controls.</p>
+                </div>
+                <div class="span9">
+                    <form class="well">
+                        {{ form_widget(form3) }}
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <h3>Search form</h3>
+
+            <div class="row">
+                <div class="span3">
+                    <p>Reflecting default WebKit styles, just add <code>.form-search</code> for extra rounded search fields.
+                    </p>
+                </div>
+                <div class="span9">
+                    <form class="well form-search">
+                        {{ form_widget(form4) }}
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <h3>Inline form</h3>
+
+            <div class="row">
+                <div class="span3">
+                    <p>Inputs are block level to start. For <code>.form-inline</code> and <code>.form-horizontal</code>, we
+                        use inline-block.</p>
+                </div>
+                <div class="span9">
+                    <form class="well form-search">
+                        {{ form_widget(form5) }}
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+{% endblock content %}

@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>{% block title %}Demo Bundle{% endblock %}</title>
+    <title>{% block title %}Accueil{% endblock %} - Boostrap</title>
 
     <link rel="stylesheet/less" type="text/css" href="{{ asset('bundles/pixelcore/less/main.less') }}">
 
@@ -29,17 +29,17 @@
                                 </a>
                                 <a class="brand" href="{{ path("core_home") }}">Bootstrap</a>
                                 <div class="nav-collapse">
-                                    <form class="navbar-search pull-left" method="post" action="/mopa/bootstrap">
-                                        <input type="hidden" id="mopa_bootstrap_example_search__token" name="mopa_bootstrap_example_search[_token]" value="a9f7a4be4a8d1e38c730b367b9b2853522c2b89a">
-                                        <input type="text" id="mopa_bootstrap_example_search_search" name="mopa_bootstrap_example_search[search]" required="required" placeholder="Recherche" class="input-medium search-query" value="">
+                                    <form class="navbar-search pull-left">
+                                        <input type="text" required="required" placeholder="Recherche" class="input-medium search-query" >
                                     </form>
                                     <ul class="nav pull-right">
                                         <li class="dropdown first">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap</a>
                                             <ul class="dropdown-menu menu_level_1">
-                                                <li class="first"><a href="{{ path("core_css") }}">CSS</a></li>
-                                                <li><a href="{{ path("core_forms") }}">Forms</a></li>
-                                                <li><a href="{{ path("core_js") }}">JS</a></li>
+                                                <li class="first"><a href="{{ path("bootstrap_index") }}">Tests</a></li>
+                                                <li><a href="{{ path("bootstrap_css") }}">CSS</a></li>
+                                                <li><a href="{{ path("bootstrap_forms") }}">Forms</a></li>
+                                                <li><a href="{{ path("bootstrap_js") }}">JS</a></li>
                                             </ul>
                                         </li>
                                     </ul>
