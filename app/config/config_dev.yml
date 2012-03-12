@@ -21,3 +21,27 @@ monolog:
 
 assetic:
     use_controller: true
+
+# Propel
+propel:
+    dbal:
+        driver:               %database_driver%
+        user:                 %database_user%
+        password:             %database_password%
+        dsn:                  mysql:host=%database_host%;dbname=%database_name%;charset=UTF8
+        options:              {}
+        attributes:           {}
+#        default_connection:       default
+#        connections:
+#           default:
+#               driver:             mysql
+#               user:               root
+#               password:           null
+#               dsn:                mysql:host=localhost;dbname=test
+#               options:
+#                   ATTR_PERSISTENT: false
+#               attributes:
+#                   ATTR_EMULATE_PREPARES: true
+#               settings:
+#                   charset:        { value: UTF8 }
+#                   queries:        { query: 'INSERT INTO BAR ('hey', 'there')' }

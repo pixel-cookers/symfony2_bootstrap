@@ -3,15 +3,18 @@ twig v1.6.0
 monolog 1.0.2
 doctrine-common 2.1.4
 doctrine-dbal 2.1.6
-doctrine 2.1.6
 swiftmailer v4.1.5
 assetic v1.0.2
-twig-extensions 
+twig-extensions 1dfff8e793f50f651c4f74f796c2c68a4aee3147
 metadata 1.0.0
 SensioFrameworkExtraBundle 638f545b7020b9e9d5944a7e3167f60ed848250d
 JMSSecurityExtraBundle 541a4c242328dc04b99540c75346cc74a7c0cfb5
 SensioDistributionBundle 20b66a408084ad8752f98e50f10533f5245310bf
 SensioGeneratorBundle b1ccb78c1743f30817b0fce9bb5c6baff6ed7bf8
-AsseticBundle v1.0.0RC1
+AsseticBundle v1.0.1
 MopaBootstrapBundle e5e98134e24ea08b9078a70af4ce4e45e6a36d7c
-twittersbootstrap b410eeb6dd4025718cddfc435c507bad7d47af1b
+FOSUserBundle 1.1.0
+TypehintableBehavior 76987030b66a6d6083b9bc5ea185172a36b73e78
+PropelBundle ebf5aece637f769156b72554ef34d65332b5a149
+phing 1fd92c78f14a02b3e1cd9c59c7a08b4cab532d33
+propel 356947af6b1892f7f6d8379b4a3c5f6dac157eb7

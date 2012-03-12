@@ -20,6 +20,9 @@ class AppKernel extends Kernel
 
             new Pixel\CoreBundle\PixelCoreBundle(),
             new Mopa\BootstrapBundle\MopaBootstrapBundle(),
+
+            // PropelBundle
+            new Propel\PropelBundle\PropelBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
