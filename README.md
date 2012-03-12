@@ -1,5 +1,5 @@
 TODO:
-=====
+-----
 
 * Transfert the vendors to submodules instead of deps
 
@@ -11,6 +11,3 @@ TODO:
 * Choose and add an Admin bundle for basic CRUD (propel compatibility)
 * Add qKnpMenuBundle
 * Add AvalancheImagineBundle
-
-
-* Find a solution for add LDAP authentification to the security context
