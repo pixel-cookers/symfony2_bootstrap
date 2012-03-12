@@ -1,6 +1,9 @@
 TODO:
 =====
 
+* Transfert the vendors to submodules instead of deps
+
+
 * Add FOSUserBundle (install, settings & propel support)
 * Extend FOSUserBundle with a UserBundle for add fields and flexibility
 
