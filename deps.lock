@@ -1,6 +1,7 @@
 symfony v2.0.11
 twig v1.6.0
 monolog 1.0.2
+doctrine 2.1.6
 doctrine-common 2.1.4
 doctrine-dbal 2.1.6
 swiftmailer v4.1.5
