@@ -1,4 +1,4 @@
-TODO:
+ToDo :
 -----
 
 * Add FOSUserBundle (install, settings & propel support)
@@ -9,7 +9,7 @@ TODO:
 * Add qKnpMenuBundle
 * Add AvalancheImagineBundle
 
-Done:
+Done :
 -----
 
 * Transfert the vendors to submodules instead of deps
