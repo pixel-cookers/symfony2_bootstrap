@@ -1,7 +1,7 @@
 TODO:
 -----
 
-* Transfert the vendors to submodules instead of deps
+* <strike>Transfert the vendors to submodules instead of deps</strike>
 
 
 * Add FOSUserBundle (install, settings & propel support)
