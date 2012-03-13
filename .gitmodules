@@ -45,19 +45,19 @@
 	url = git://github.com/symfony/AsseticBundle.git
 [submodule "vendor/bundles/Mopa/BootstrapBundle"]
 	path = vendor/bundles/Mopa/BootstrapBundle
-	url = git@github.com:phiamo/MopaBootstrapBundle.git
+	url = git://github.com/phiamo/MopaBootstrapBundle.git
 [submodule "vendor/bundles/FOS/UserBundle"]
 	path = vendor/bundles/FOS/UserBundle
 	url = git://github.com/FriendsOfSymfony/FOSUserBundle.git
 [submodule "vendor/propel-behaviors/TypehintableBehavior"]
 	path = vendor/propel-behaviors/TypehintableBehavior
-	url = http://github.com/willdurand/TypehintableBehavior.git
+	url = git://github.com/willdurand/TypehintableBehavior.git
 [submodule "vendor/bundles/Propel/PropelBundle"]
 	path = vendor/bundles/Propel/PropelBundle
-	url = https://github.com/propelorm/PropelBundle.git
+	url = git://github.com/propelorm/PropelBundle.git
 [submodule "vendor/phing"]
 	path = vendor/phing
-	url = https://github.com/Xosofox/phing.git
+	url = git://github.com/Xosofox/phing.git
 [submodule "vendor/propel"]
 	path = vendor/propel
-	url = https://github.com/propelorm/Propel.git
+	url = git://github.com/propelorm/Propel.git
