@@ -3,5 +3,3 @@ app/cache
 app/logs
 web/bundles/*
 .livereload
-vendor/
-vendor/*
