@@ -26,6 +26,14 @@ if (!version_compare(phpversion(), '5.3.2', '>=')) {
 EOF;
 }
 
+if (!is_dir(__DIR__.'/../vendor/symfony')) {
+    $vendorsAreMissing = true;
+    $majorProblems[] = '<strong>CRITICAL</strong>: Vendor libraries are missing. Install composer following instructions from: <a href="http://getcomposer.org/">http://getcomposer.org/</a>. Then run
+        "<strong>php composer.phar install</strong>" to install them.';
+} else {
+    $vendorsAreMissing = false;
+}
+
 if (!is_writable(__DIR__ . '/../app/cache')) {
     $majorProblems[] = 'Change the permissions of the "<strong>app/cache/</strong>"
         directory so that the web server can write into it.';
@@ -49,10 +57,6 @@ if (!(!(function_exists('apc_store') && ini_get('apc.enabled')) || version_compa
     $majorProblems[] = 'Upgrade your <strong>APC</strong> extension (3.0.17+)';
 }
 
-if (!function_exists('token_get_all')) {
-    $minorProblems[] = 'Install and enable the <strong>Tokenizer</strong> extension.';
-}
-
 if (!function_exists('mb_strlen')) {
     $minorProblems[] = 'Install and enable the <strong>mbstring</strong> extension.';
 }
@@ -65,7 +69,7 @@ if (!function_exists('utf8_decode')) {
     $minorProblems[] = 'Install and enable the <strong>XML</strong> extension.';
 }
 
-if (PHP_OS != 'WINNT' && !function_exists('posix_isatty')) {
+if (!defined('PHP_WINDOWS_VERSION_BUILD') && !function_exists('posix_isatty')) {
     $minorProblems[] = 'Install and enable the <strong>php_posix</strong> extension (used to colorize the CLI output).';
 }
 
@@ -92,10 +96,6 @@ if (!class_exists('Locale')) {
     }
 }
 
-if (!class_exists('SQLite3') && !in_array('sqlite', PDO::getAvailableDrivers())) {
-    $majorProblems[] = 'Install and enable the <strong>SQLite3</strong> or <strong>PDO_SQLite</strong> extension.';
-}
-
 if (!function_exists('json_encode')) {
     $majorProblems[] = 'Install and enable the <strong>json</strong> extension.';
 }
@@ -112,10 +112,25 @@ if (!function_exists('token_get_all')) {
     $majorProblems[] = 'Install and enable the <strong>Tokenizer</strong> extension.';
 }
 
+if (!function_exists('simplexml_import_dom')) {
+    $majorProblems[] = 'Install and enable the <strong>SimpleXML</strong> extension.';
+}
+
 // php.ini
 if (!ini_get('date.timezone')) {
     $phpini = true;
     $majorProblems[] = 'Set the "<strong>date.timezone</strong>" setting in php.ini<a href="#phpini">*</a> (like Europe/Paris).';
+}
+
+if (ini_get('detect_unicode')) {
+    $phpini = true;
+    $majorProblems[] = 'Set the "<strong>detect_unicode</strong>" to <strong>off</strong> in php.ini<a href="#phpini">*</a>.';
+}
+
+$suhosin = ini_get('suhosin.executor.include.whitelist');
+if (false !== $suhosin && false === stripos($suhosin, 'phar')) {
+    $phpini = true;
+    $majorProblems[] = 'Set the "<strong>suhosin.executor.include.whitelist</strong>" to "<strong>phar'.($suhosin?' '.$suhosin:'').'</strong>" in php.ini<a href="#phpini">*</a>.';
 }
 
 if (ini_get('short_open_tag')) {
@@ -137,73 +152,76 @@ if (ini_get('session.auto_start')) {
     $phpini = true;
     $minorProblems[] = 'Set <strong>session.auto_start</strong> to <strong>off</strong> in php.ini<a href="#phpini">*</a>.';
 }
+
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <link href="bundles/sensiodistribution/webconfigurator/css/install.css" rel="stylesheet" type="text/css" media="all" />
+        <meta charset="UTF-8" />
+        <?php if (!$vendorsAreMissing): ?>
+        <link rel="stylesheet" href="bundles/sensiodistribution/webconfigurator/css/install.css" />
+        <?php endif; ?>
         <title>Symfony Configuration</title>
     </head>
     <body>
         <div id="symfony-wrapper">
             <div id="symfony-content">
                 <div class="symfony-blocks-install">
-                <div class="symfony-block-logo">
-                    <img src="bundles/sensiodistribution/webconfigurator/images/logo-big.gif" alt="sf_symfony" />
-                </div>
+                    <?php if (!$vendorsAreMissing): ?>
+                    <div class="symfony-block-logo">
+                        <img src="bundles/sensiodistribution/webconfigurator/images/logo-big.gif" alt="Symfony logo" />
+                    </div>
+                    <?php endif; ?>
 
-                <div class="symfony-block-content">
-                    <h1>Welcome!</h1>
-                    <p>Welcome to your new Symfony project.</p>
-                    <p>This script will guide you through the basic configuration of your project. You can also do the same by editing the ‘<strong>app/config/parameters.ini</strong>’ file directly.</p>
-
-                    <?php if (count($majorProblems)): ?>
-                        <h2>
-                            <span><?php echo count($majorProblems) ?> Major problems</span>
-                        </h2>
-                        <p>Major problems have been detected and <strong>must</strong> be fixed before continuing :</p>
-                        <ol>
-                            <?php foreach ($majorProblems as $problem): ?>
-                                <li><?php echo $problem; ?></li>
-                            <?php endforeach ?>
-                        </ol>
-                    <?php endif ?>
-
-                    <?php if (count($minorProblems)): ?>
-                        <h2>Recommendations</h2>
+                    <div class="symfony-block-content">
+                        <h1>Welcome!</h1>
+                        <p>Welcome to your new Symfony project.</p>
                         <p>
-                            <?php if ($majorProblems): ?>
-                                Additionally, to
-                            <?php else: ?>
-                                To<?php endif; ?>
-                            enhance your Symfony experience, it’s recommended that you fix the following :
+                            This script will guide you through the basic configuration of your project. 
+                            You can also do the same by editing the ‘<strong>app/config/parameters.yml</strong>’ file directly.
                         </p>
-                        <ol>
-                            <?php foreach ($minorProblems as $problem): ?>
-                            <li><?php echo $problem; ?></li>
-                            <?php endforeach; ?>
-                        </ol>
-                    <?php endif ?>
 
-                    <?php if ($phpini): ?>
-                            <a id="phpini"></a>
-                            <p>*
+                        <?php if (count($majorProblems)): ?>
+                            <h2><?php echo count($majorProblems) ?> Major problems</h2>
+                            <p>Major problems have been detected and <strong>must</strong> be fixed before continuing:</p>
+                            <ol>
+                                <?php foreach ($majorProblems as $problem): ?>
+                                    <li><?php echo $problem ?></li>
+                                <?php endforeach; ?>
+                            </ol>
+                        <?php endif; ?>
+
+                        <?php if (count($minorProblems)): ?>
+                            <h2>Recommendations</h2>
+                            <p>
+                                <?php if ($majorProblems): ?>Additionally, to<?php else: ?>To<?php endif; ?> enhance your Symfony experience, 
+                                it’s recommended that you fix the following:
+                            </p>
+                            <ol>
+                                <?php foreach ($minorProblems as $problem): ?>
+                                    <li><?php echo $problem ?></li>
+                                <?php endforeach; ?>
+                            </ol>
+                        <?php endif; ?>
+
+                        <?php if ($phpini): ?>
+                            <p id="phpini">*
                                 <?php if (get_cfg_var('cfg_file_path')): ?>
                                     Changes to the <strong>php.ini</strong> file must be done in "<strong><?php echo get_cfg_var('cfg_file_path') ?></strong>".
                                 <?php else: ?>
                                     To change settings, create a "<strong>php.ini</strong>".
                                 <?php endif; ?>
                             </p>
-                    <?php endif; ?>
+                        <?php endif; ?>
 
-                    <ul class="symfony-install-continue">
-                        <?php if (!count($majorProblems)): ?>
-                            <li><a href="app_dev.php/_configurator/">Configure your Symfony Application online</a></li>
-                            <li><a href="app_dev.php/">Bypass configuration and go to the Welcome page</a></li>
-                        <?php endif ?>
-                        <li><a href="config.php">Re-check configuration</a></li>
-                    </ul>
+                        <ul class="symfony-install-continue">
+                            <?php if (!count($majorProblems)): ?>
+                                <li><a href="app_dev.php/_configurator/">Configure your Symfony Application online</a></li>
+                                <li><a href="app_dev.php/">Bypass configuration and go to the Welcome page</a></li>
+                            <?php endif; ?>
+                            <li><a href="config.php">Re-check configuration</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
