@@ -1,5 +1,5 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "pixel-cookers/symfony2_bootstrap",
     "autoload": {
         "psr-0": { "": "src/" }
     },
@@ -15,7 +15,10 @@
         "sensio/distribution-bundle": "dev-master",
         "sensio/framework-extra-bundle": "dev-master",
         "sensio/generator-bundle": "dev-master",
-        "jms/security-extra-bundle": "dev-master"
+        "jms/security-extra-bundle": "dev-master",
+        "mopa/bootstrap-bundle": "master",
+        "propel/propel1": "master",
+        "propel/propel-bundle": "master"
     },
     "scripts": {
         "post-install-cmd": [
