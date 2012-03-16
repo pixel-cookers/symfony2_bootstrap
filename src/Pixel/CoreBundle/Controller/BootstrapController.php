@@ -6,14 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-use Mopa\BootstrapBundle\Form\Type\ExampleInputFormType;
-use Mopa\BootstrapBundle\Form\Type\ExampleFormsType;
-use Mopa\BootstrapBundle\Form\Type\ExampleChoiceFormType;
-use Mopa\BootstrapBundle\Form\Type\ExampleInlineFormType;
-use Mopa\BootstrapBundle\Form\Type\ExampleSearchFormType;
-use Mopa\BootstrapBundle\Form\Type\ExampleHorizontalFormType;
-use Mopa\BootstrapBundle\Form\Type\ExampleExtendedFormType;
-use Mopa\BootstrapBundle\Form\Type\ExampleExtendedViewFormType;
+use Pixel\CoreBundle\Form\Type\ExampleFormsType;
+use Pixel\CoreBundle\Form\Type\ExampleChoiceFormType;
+use Pixel\CoreBundle\Form\Type\ExampleInlineFormType;
+use Pixel\CoreBundle\Form\Type\ExampleSearchFormType;
+use Pixel\CoreBundle\Form\Type\ExampleHorizontalFormType;
+use Pixel\CoreBundle\Form\Type\ExampleExtendedFormType;
+use Pixel\CoreBundle\Form\Type\ExampleExtendedViewFormType;
 
 
 class BootstrapController extends Controller
