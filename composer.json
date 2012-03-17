@@ -18,7 +18,8 @@
         "jms/security-extra-bundle": "dev-master",
         "mopa/bootstrap-bundle": "dev-master",
         "propel/propel1": "dev-master",
-        "propel/propel-bundle": "dev-master"
+        "propel/propel-bundle": "dev-master",
+        "friendsofsymfony/user-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
