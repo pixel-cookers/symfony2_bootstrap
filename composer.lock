@@ -1,5 +1,5 @@
 {
-    "hash": "87d9e1d6af4f5e73151accc93b881f1b",
+    "hash": "a7d09df10bc785c63d47dea4ae7445db",
     "packages": [
         {
             "package": "doctrine/common",
@@ -101,8 +101,7 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "5631002cd041e1fd34d11254b166d432f87d89ca",
-            "alias": "2.1.9999999.9999999-dev"
+            "source-reference": "91e977d38c2fc59ca7344ff2fbaf47d0a9a2e836"
         },
         {
             "package": "twig/extensions",
