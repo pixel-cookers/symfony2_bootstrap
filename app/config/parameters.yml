@@ -2,7 +2,7 @@ parameters:
   database_driver:   mysql
   database_host:     localhost
   database_port:     ~
-  database_name:     sf2_tests
+  database_name:     sf2_bootstrap
   database_user:     root
   database_password: ~
 
