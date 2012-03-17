@@ -12,4 +12,5 @@ ToDo :
 Done :
 -----
 
+* Handle vendors with composer [Issue #1](https://github.com/pixel-cookers/symfony2_bootstrap/issues/1)
 * Transfert the vendors to submodules instead of deps
