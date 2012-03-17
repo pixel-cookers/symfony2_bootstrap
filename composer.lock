@@ -1,5 +1,5 @@
 {
-    "hash": "a7d09df10bc785c63d47dea4ae7445db",
+    "hash": "280b004dda75b4ad1dcacec4a5cb5790",
     "packages": [
         {
             "package": "doctrine/common",
@@ -17,6 +17,11 @@
         {
             "package": "doctrine/orm",
             "version": "2.2.0"
+        },
+        {
+            "package": "friendsofsymfony/user-bundle",
+            "version": "dev-master",
+            "source-reference": "a0e50724825fd73531a563f514168d8536b9187e"
         },
         {
             "package": "jms/aop-bundle",
@@ -101,7 +106,8 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "91e977d38c2fc59ca7344ff2fbaf47d0a9a2e836"
+            "source-reference": "3d84153d687c285b1356683298531421ec108359",
+            "alias": "2.1.9999999.9999999-dev"
         },
         {
             "package": "twig/extensions",
