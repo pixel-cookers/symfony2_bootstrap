@@ -1,5 +1,5 @@
 {
-    "hash": "280b004dda75b4ad1dcacec4a5cb5790",
+    "hash": "0dd17f1015becab4f5bcb7dcb86ad020",
     "packages": [
         {
             "package": "doctrine/common",
@@ -21,7 +21,7 @@
         {
             "package": "friendsofsymfony/user-bundle",
             "version": "dev-master",
-            "source-reference": "a0e50724825fd73531a563f514168d8536b9187e"
+            "source-reference": "43b9d5c37a27c281790ed68b29d47c8ddfd2eb43"
         },
         {
             "package": "jms/aop-bundle",
@@ -38,7 +38,7 @@
         {
             "package": "jms/security-extra-bundle",
             "version": "dev-master",
-            "source-reference": "5ce520127ba43d90563775a7935d4980ac227853"
+            "source-reference": "7c8b7e7833c949fa09dcddff48cc03c0893d6250"
         },
         {
             "package": "kriswallsmith/assetic",
@@ -52,7 +52,11 @@
         {
             "package": "mopa/bootstrap-bundle",
             "version": "dev-master",
-            "source-reference": "641fce67011af89464b91c9f4cc566517f92f150"
+            "source-reference": "cc95e8ebb801939c6822329f997f8d66a78d7e5c"
+        },
+        {
+            "package": "pear-phing/phing",
+            "version": "2.4.9"
         },
         {
             "package": "propel/propel-bundle",
@@ -62,26 +66,26 @@
         {
             "package": "propel/propel1",
             "version": "dev-master",
-            "source-reference": "b7669e350eb0e1fc213d8844dd0b9a598be6bac3"
+            "source-reference": "4e72771b139a9d56c35093c1cc52aee4f07a0677"
         },
         {
             "package": "sensio/distribution-bundle",
             "version": "dev-master",
-            "source-reference": "12882a093af81f89ac13078904e81c308784e883"
+            "source-reference": "e78f65f36b27ba07b1e44241b4cf5443e80d7bd5"
         },
         {
             "package": "sensio/framework-extra-bundle",
             "version": "dev-master",
-            "source-reference": "d371c21a464b9f1ac6bfebf643e14a4d88acd2d8"
+            "source-reference": "6e3cccb66d3577fdbd5b6935a5d6b8bed8d47768"
         },
         {
             "package": "sensio/generator-bundle",
             "version": "dev-master",
-            "source-reference": "43c5c95e42e451ac7250d6a863f0540c7f266e1d"
+            "source-reference": "3d16db1631a3648d1b6662efe6de32735118b1da"
         },
         {
             "package": "swiftmailer/swiftmailer",
-            "version": "4.1.5"
+            "version": "4.1.6"
         },
         {
             "package": "symfony/assetic-bundle",
@@ -106,7 +110,7 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "3d84153d687c285b1356683298531421ec108359",
+            "source-reference": "a00ae273a681cc4019cc457768d5265c958d9299",
             "alias": "2.1.9999999.9999999-dev"
         },
         {
@@ -116,7 +120,7 @@
         },
         {
             "package": "twig/twig",
-            "version": "1.6.1"
+            "version": "1.6.3"
         }
     ],
     "aliases": []

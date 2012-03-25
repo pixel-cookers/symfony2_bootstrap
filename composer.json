@@ -3,6 +3,12 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.phing.info"
+        }
+    ],
     "require": {
         "php": ">=5.3.2",
         "symfony/symfony": "2.1.*",
@@ -18,6 +24,7 @@
         "jms/security-extra-bundle": "dev-master",
         "mopa/bootstrap-bundle": "dev-master",
         "propel/propel1": "dev-master",
+        "pear-phing/phing": "2.4.9",
         "propel/propel-bundle": "dev-master",
         "friendsofsymfony/user-bundle": "dev-master"
     },
