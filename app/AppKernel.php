@@ -24,6 +24,8 @@ class AppKernel extends Kernel
 
             // PropelBundle
             new Propel\PropelBundle\PropelBundle(),
+
+            new FOS\UserBundle\FOSUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
