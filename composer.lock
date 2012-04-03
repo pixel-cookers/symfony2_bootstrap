@@ -1,5 +1,5 @@
 {
-    "hash": "0dd17f1015becab4f5bcb7dcb86ad020",
+    "hash": "c89887b4fbe7a71be6db18ce65424aee",
     "packages": [
         {
             "package": "doctrine/common",
@@ -12,7 +12,7 @@
         {
             "package": "doctrine/doctrine-bundle",
             "version": "dev-master",
-            "source-reference": "90e39fb7ff5b4c13577602dab7e08c90067160b4"
+            "source-reference": "dd3d35dd28e864fb908a70f8b206d1209aa2c333"
         },
         {
             "package": "doctrine/orm",
@@ -21,7 +21,7 @@
         {
             "package": "friendsofsymfony/user-bundle",
             "version": "dev-master",
-            "source-reference": "43b9d5c37a27c281790ed68b29d47c8ddfd2eb43"
+            "source-reference": "b706553b4f7784c56398088a0d050bd92dd6c4ac"
         },
         {
             "package": "jms/aop-bundle",
@@ -38,12 +38,12 @@
         {
             "package": "jms/security-extra-bundle",
             "version": "dev-master",
-            "source-reference": "7c8b7e7833c949fa09dcddff48cc03c0893d6250"
+            "source-reference": "b564463433aed66e9dddad8cbb761afff5a80cb4"
         },
         {
             "package": "kriswallsmith/assetic",
             "version": "dev-master",
-            "source-reference": "2634d29cc193981761e3daf28e1afc6358bb43b1"
+            "source-reference": "e43f26fb2c5dddc4c4c4cf783bce68eac6326f20"
         },
         {
             "package": "monolog/monolog",
@@ -52,7 +52,7 @@
         {
             "package": "mopa/bootstrap-bundle",
             "version": "dev-master",
-            "source-reference": "cc95e8ebb801939c6822329f997f8d66a78d7e5c"
+            "source-reference": "ced50a352d8796ada4d5449c290b8ea82b1db57f"
         },
         {
             "package": "pear-phing/phing",
@@ -61,12 +61,12 @@
         {
             "package": "propel/propel-bundle",
             "version": "dev-master",
-            "source-reference": "4754feac83d865fd1d13eeb0043a1a9ab2299e17"
+            "source-reference": "e15eccc0cded18133cb4e2162eb3623300fea43b"
         },
         {
             "package": "propel/propel1",
             "version": "dev-master",
-            "source-reference": "4e72771b139a9d56c35093c1cc52aee4f07a0677"
+            "source-reference": "ac4eb5014d9997d56287bce8e23670399e394235"
         },
         {
             "package": "sensio/distribution-bundle",
@@ -76,12 +76,12 @@
         {
             "package": "sensio/framework-extra-bundle",
             "version": "dev-master",
-            "source-reference": "6e3cccb66d3577fdbd5b6935a5d6b8bed8d47768"
+            "source-reference": "7e1e52a241558264253179bb790f4c5d25544fb4"
         },
         {
             "package": "sensio/generator-bundle",
             "version": "dev-master",
-            "source-reference": "3d16db1631a3648d1b6662efe6de32735118b1da"
+            "source-reference": "06d07e0514d310be8d5630bfd93637136991c30c"
         },
         {
             "package": "swiftmailer/swiftmailer",
@@ -110,7 +110,7 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "a00ae273a681cc4019cc457768d5265c958d9299",
+            "source-reference": "b9de0be3499c938926401219711353476ed100c9",
             "alias": "2.1.9999999.9999999-dev"
         },
         {
@@ -120,7 +120,11 @@
         },
         {
             "package": "twig/twig",
-            "version": "1.6.3"
+            "version": "1.6.4"
+        },
+        {
+            "package": "willdurand/TypehintableBehavior",
+            "version": "0.1.0"
         }
     ],
     "aliases": []
