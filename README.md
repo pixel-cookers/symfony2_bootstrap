@@ -8,6 +8,8 @@ ToDo :
 * Choose and add an Admin bundle for basic CRUD (propel compatibility)
 * Add qKnpMenuBundle
 * Add AvalancheImagineBundle
+* Add doc for installation and config of the bootstrap
+* Add description and demo site to the project
 
 Done :
 -----
