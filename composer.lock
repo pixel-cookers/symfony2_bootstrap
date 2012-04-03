@@ -1,5 +1,5 @@
 {
-    "hash": "c89887b4fbe7a71be6db18ce65424aee",
+    "hash": "920009751e9cb6423da3a56d2add5d7c",
     "packages": [
         {
             "package": "doctrine/common",
@@ -121,6 +121,11 @@
         {
             "package": "twig/twig",
             "version": "1.6.4"
+        },
+        {
+            "package": "twitter/bootstrap",
+            "version": "master",
+            "source-reference": "master"
         },
         {
             "package": "willdurand/TypehintableBehavior",
