@@ -20,7 +20,7 @@ class AppKernel extends Kernel
             new JMS\AopBundle\JMSAopBundle(),
 
             new Pixel\CoreBundle\PixelCoreBundle(),
-            new Mopa\BootstrapBundle\MopaBootstrapBundle(),
+            new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
 
             // PropelBundle
             new Propel\PropelBundle\PropelBundle(),
