@@ -1,6 +1,6 @@
 What is it ?
 ============
-A Symfony2 quick launch with basic configurations and often used code bundles. Includes Twitter Bootstrap for layout & sexy ;)
+A Symfony2 quick launch with basic configurations and often used code & bundles. Includes Twitter Bootstrap for layout & sexy ;)
 
 **Warning: This bootstrap is not ready for use at the moment, I will keep to update it and will tag it when ready for production.**
 
