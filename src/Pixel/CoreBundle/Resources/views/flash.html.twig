@@ -40,12 +40,3 @@
     {% endif %}
 
 {% endmacro %}
-
-
-{% macro test() %}
-
-    {% if error %}
-    <div>{{ error|trans({}, 'FOSUserBundle') }}</div>
-    {% endif %}
-
-{% endmacro %}
