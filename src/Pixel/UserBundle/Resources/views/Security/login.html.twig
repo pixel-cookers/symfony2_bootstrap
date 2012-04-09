@@ -73,9 +73,7 @@
     {% if error %}
         <div class="alert alert-error" data-alert="alert">
             <a class="close" data-dismiss="alert" href="#">×</a>
-            <p>
-                {{ error|trans({}, 'FOSUserBundle') }}
-            </p>
+            {{ error|trans({}, 'FOSUserBundle') }}
         </div>
     {% endif %}
 {% endblock flashes %}
