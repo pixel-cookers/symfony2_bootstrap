@@ -1,5 +1,5 @@
 {
-    "hash": "0ccb40da2a40b065cfa957f825a44c08",
+    "hash": "60c6ad7b1b1e741d2390697910b2bb17",
     "packages": [
         {
             "package": "doctrine/common",
@@ -59,13 +59,19 @@
             "version": "2.4.9"
         },
         {
+            "package": "phing/phing",
+            "version": "2.4.12"
+        },
+        {
             "package": "propel/propel-bundle",
-            "version": "2.0-dev",
-            "source-reference": "e0d2b9f43a4ac767a3a26692f493c07b6f5f6000"
+            "version": "dev-master",
+            "source-reference": "0.5"
         },
         {
             "package": "propel/propel1",
-            "version": "1.6.5"
+            "version": "dev-master",
+            "source-reference": "d6506a592f3b2a3f2411e07c1e184a4dde26e490",
+            "alias": "1.6.9999999.9999999-dev"
         },
         {
             "package": "sensio/distribution-bundle",

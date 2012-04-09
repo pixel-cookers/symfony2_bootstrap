@@ -56,10 +56,10 @@
         "jms/security-extra-bundle": "dev-master",
         "mopa/bootstrap-bundle": "dev-master",
         "twitter/bootstrap": "master",
-        "propel/propel1": "1.6.5",
+        "propel/propel1": "1.6.x-dev",
         "willdurand/TypehintableBehavior": "0.1.0",
         "pear-phing/phing": "2.4.9",
-        "propel/propel-bundle": "2.0-dev",
+        "propel/propel-bundle": "dev-master",
         "friendsofsymfony/user-bundle": "dev-master"
     },
     "scripts": {
