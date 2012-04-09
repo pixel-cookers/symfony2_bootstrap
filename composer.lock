@@ -1,5 +1,5 @@
 {
-    "hash": "920009751e9cb6423da3a56d2add5d7c",
+    "hash": "0ccb40da2a40b065cfa957f825a44c08",
     "packages": [
         {
             "package": "doctrine/common",
@@ -43,7 +43,7 @@
         {
             "package": "kriswallsmith/assetic",
             "version": "dev-master",
-            "source-reference": "e43f26fb2c5dddc4c4c4cf783bce68eac6326f20"
+            "source-reference": "b25d1fdd07a70585d15c84735e82664acec88eab"
         },
         {
             "package": "monolog/monolog",
@@ -60,23 +60,22 @@
         },
         {
             "package": "propel/propel-bundle",
-            "version": "dev-master",
-            "source-reference": "e15eccc0cded18133cb4e2162eb3623300fea43b"
+            "version": "2.0-dev",
+            "source-reference": "e0d2b9f43a4ac767a3a26692f493c07b6f5f6000"
         },
         {
             "package": "propel/propel1",
-            "version": "dev-master",
-            "source-reference": "ac4eb5014d9997d56287bce8e23670399e394235"
+            "version": "1.6.5"
         },
         {
             "package": "sensio/distribution-bundle",
             "version": "dev-master",
-            "source-reference": "e78f65f36b27ba07b1e44241b4cf5443e80d7bd5"
+            "source-reference": "38be63ebb45cc1fbeaff3f2bdf6d0ed216305a24"
         },
         {
             "package": "sensio/framework-extra-bundle",
             "version": "dev-master",
-            "source-reference": "7e1e52a241558264253179bb790f4c5d25544fb4"
+            "source-reference": "94a9615c6e52a3d02ca7f44eee56f20e0c5c4622"
         },
         {
             "package": "sensio/generator-bundle",
@@ -90,7 +89,7 @@
         {
             "package": "symfony/assetic-bundle",
             "version": "dev-master",
-            "source-reference": "b9cff021abc3d9433a892fa9908d9856393c0d09"
+            "source-reference": "a771e48366d80002b0046ba43e658d067170634d"
         },
         {
             "package": "symfony/monolog-bundle",
@@ -110,17 +109,19 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "b9de0be3499c938926401219711353476ed100c9",
+            "source-reference": "127cff0aa8b2a6f7e388f180e471f748e6a1dec3",
             "alias": "2.1.9999999.9999999-dev"
         },
         {
             "package": "twig/extensions",
             "version": "dev-master",
-            "source-reference": "1dfff8e793f50f651c4f74f796c2c68a4aee3147"
+            "source-reference": "4c831657215e51568fcb31bb9142e827f9a69bd5"
         },
         {
             "package": "twig/twig",
-            "version": "1.6.4"
+            "version": "dev-master",
+            "source-reference": "46ae99fa4c11f76248b12da647fe64399f860e82",
+            "alias": "1.7.9999999.9999999-dev"
         },
         {
             "package": "twitter/bootstrap",
