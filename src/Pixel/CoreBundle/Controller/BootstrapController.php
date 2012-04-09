@@ -19,20 +19,6 @@ class BootstrapController extends Controller
 {
 
     /**
-     * @Route("/bootstrap", name="bootstrap_index")
-     * @Template()
-     */
-    public function indexAction()
-    {
-   /*     $this->get('session')->setFlash('info', "Message info");
-        $this->get('session')->setFlash('error', "Message error");
-        $this->get('session')->setFlash('warning', "Message warning");
-        $this->get('session')->setFlash('success', "Message success");*/
-
-        return array();
-    }
-
-    /**
      * @Route("/bootstrap/css", name="bootstrap_css")
      * @Template()
      */
