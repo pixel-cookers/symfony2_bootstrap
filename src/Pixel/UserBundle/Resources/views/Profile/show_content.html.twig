@@ -1,0 +1,18 @@
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Labels</th>
+            <th>Values</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ 'profile.show.username'|trans({}, 'FOSUserBundle') }}</td>
+            <td>{{ user.username }}</td>
+        </tr>
+        <tr>
+            <td>{{ 'profile.show.email'|trans({}, 'FOSUserBundle') }}</td>
+            <td>{{ user.email }}</td>
+        </tr>
+    </tbody>
+</table>

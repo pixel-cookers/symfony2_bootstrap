@@ -1,0 +1,23 @@
+{% extends 'PixelCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+    {% block fos_user_content %}
+
+        <div class="row">
+            <div class="span12">
+                <div class="hero-unit">
+                    <h1>Hello again</h1>
+                    <p>This is your profile page containing some informations about you and maybe more :)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span12">
+                {% include "FOSUserBundle:Profile:show_content.html.twig" %}
+            </div>
+        </div>
+
+    {% endblock %}
+{% endblock %}
