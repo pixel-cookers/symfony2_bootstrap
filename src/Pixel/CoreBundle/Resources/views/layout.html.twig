@@ -52,10 +52,12 @@
                                         <li class="divider-vertical"></li>
                                         <li>
                                             {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                                            {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
-                                            <a href="{{ path('fos_user_security_logout') }}">
-                                                <i class="icon-user icon-white"></i> {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
-                                            </a>
+                                            <p class="navbar-text pull-right">
+                                                {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                                                <a href="{{ path('fos_user_security_logout') }}">
+                                                    <i class="icon-user icon-white"></i> {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                                                </a>
+                                            </p>
                                             {% else %}
                                             <a href="{{ path('fos_user_security_login') }}">
                                                 <i class="icon-user icon-white"></i> {{ 'layout.login'|trans({}, 'FOSUserBundle') }}
