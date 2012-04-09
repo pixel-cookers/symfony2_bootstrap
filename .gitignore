@@ -8,3 +8,5 @@ build/
 vendor/
 composer.phar
 app/propel/sql
+src/Pixel/*/Model/map
+src/Pixel/*/Model/om
