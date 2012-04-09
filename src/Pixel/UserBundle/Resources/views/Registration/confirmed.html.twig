@@ -1,9 +1,21 @@
-{% extends "FOSUserBundle::layout.html.twig" %}
+{% extends 'PixelCoreBundle::layout.html.twig' %}
 
-{% block fos_user_content %}
-    <p>{{ 'registration.confirmed'|trans({'%username%': user.username}, 'FOSUserBundle') }}</p>
-    {% if app.session is not empty %}
-        {% set targetUrl = app.session.get('_security.target_path') %}
-        {% if targetUrl is not empty %}<p><a href="{{ targetUrl }}">{{ 'registration.back'|trans({}, 'FOSUserBundle') }}</a></p>{% endif %}
-    {% endif %}
-{% endblock fos_user_content %}
+{% block content %}
+
+    {% block fos_user_content %}
+
+        <div class="row">
+            <div class="span12">
+                <div class="hero-unit">
+                    <h1>Oh, hi :)</h1>
+                    <p>{{ 'registration.confirmed'|trans({'%username%': user.username}, 'FOSUserBundle') }}</p>
+                    {% if app.session is not empty %}
+                    {% set targetUrl = app.session.get('_security.target_path') %}
+                    {% if targetUrl is not empty %}<p><a href="{{ targetUrl }}">{{ 'registration.back'|trans({}, 'FOSUserBundle') }}</a></p>{% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+    {% endblock %}
+{% endblock %}
