@@ -8,7 +8,11 @@
             <div class="span12">
                 <div class="hero-unit">
                     <h1>Hello again</h1>
-                    <p>This is your profile page containing some informations about you and maybe more :)</p>
+                    <p>
+                        This is your profile page containing some informations about you and maybe more :)
+                        <br />
+                        You can even edit some of this informations by clicking <a href="{{ path('fos_user_profile_edit') }}">this link</a>.
+                    </p>
                 </div>
             </div>
         </div>
@@ -20,4 +24,5 @@
         </div>
 
     {% endblock %}
+
 {% endblock %}
