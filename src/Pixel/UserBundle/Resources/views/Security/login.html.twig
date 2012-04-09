@@ -1,0 +1,61 @@
+{% extends 'PixelCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+    {% block fos_user_content %}
+
+        <div class="row">
+            <div class="span6">
+
+                <form action="{{ path("fos_user_security_check") }}" method="post" class="form-horizontal">
+                    <fieldset>
+                        <legend>Login</legend>
+
+                        <div class="control-group">
+                            <label class="control-label" for="username">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
+                            <div class="controls">
+                                <input class="input" type="text" id="username" name="_username" value="{{ last_username }}" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="password">{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}</label>
+                            <div class="controls">
+                                <input class="input" type="password" id="password" name="_password" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="remember_me">{{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}</label>
+                            <div class="controls">
+                                <label class="checkbox inline">
+                                    <input type="checkbox" id="remember_me" name="_remember_me" value="on" /> Yep
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <input type="submit" id="_submit" name="_submit" class="btn btn-primary" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
+                        </div>
+
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+
+    {% endblock %}
+{% endblock %}
+
+{% block flashes %}
+    {% if error %}
+        <div class="alert alert-error" data-alert="alert">
+            <a class="close" data-dismiss="alert" href="#">×</a>
+            <p>
+                {{ error|trans({}, 'FOSUserBundle') }}
+            </p>
+        </div>
+    {% endif %}
+{% endblock flashes %}

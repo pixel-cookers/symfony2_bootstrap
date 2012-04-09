@@ -1,3 +1,8 @@
+PixelUserBundle:
+    resource: "@PixelUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 _welcome:
     pattern:  /
     defaults: { _controller: PixelCoreBundle:Default:index }
