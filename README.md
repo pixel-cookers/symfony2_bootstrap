@@ -7,9 +7,8 @@ A Symfony2 quick launch with basic configurations and often used code & bundles.
 ToDo :
 -----
 
-* Add FOSUserBundle (install, settings & propel support)
-* Extend FOSUserBundle with a UserBundle for add fields and flexibility
-
+* Extend FOSUserBundle with a UserBundle for add fields to the model
+* Make a set of simple queries / CRUD for quick re-use / samples
 
 * Choose and add an Admin bundle for basic CRUD (propel compatibility)
 * Add qKnpMenuBundle
@@ -20,5 +19,7 @@ ToDo :
 Done :
 -----
 
+* Extend FOSUserBundle with a UserBundle for override forms & templates
+* Add FOSUserBundle (install, settings & propel support)
 * Handle vendors with composer [Issue #1](https://github.com/pixel-cookers/symfony2_bootstrap/issues/1)
 * Transfert the vendors to submodules instead of deps
