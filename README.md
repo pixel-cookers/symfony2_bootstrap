@@ -9,7 +9,8 @@ ToDo :
 
 * Extend FOSUserBundle with a UserBundle for add fields to the model
 * Make a set of simple queries / CRUD for quick re-use / samples
-
+* Make a FixtureBundle for add some users/datas
+* Remove or find a use for the search bar...
 * Choose and add an Admin bundle for basic CRUD (propel compatibility)
 * Add qKnpMenuBundle
 * Add AvalancheImagineBundle
