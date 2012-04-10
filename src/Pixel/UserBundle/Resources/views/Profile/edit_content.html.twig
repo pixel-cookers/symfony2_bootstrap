@@ -1,7 +1,52 @@
 {% form_theme form theme %}
 
 <form action="{{ path('fos_user_profile_edit') }}" {{ form_enctype(form) }} method="POST" class="fos_user_profile_edit form-horizontal">
-    {{ form_widget(form) }}
+
+    <div class="row">
+        <div class="span8">
+            <fieldset>
+                <legend>Here are your basics fields</legend>
+
+                <div class="control-group">
+                    {{ form_label(form.children['user'].children['username']) }}
+                    <div class="controls">
+                        {{ form_widget(form.children['user'].children['username']) }}
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    {{ form_label(form.children['user'].children['email']) }}
+                    <div class="controls">
+                        {{ form_widget(form.children['user'].children['email']) }}
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    {{ form_label(form.children['current']) }}
+                    <div class="controls">
+                        {{ form_widget(form.children['current']) }}
+                    </div>
+                </div>
+
+            </fieldset>
+        </div><!-- .span8 -->
+        <div class="span4">
+            <fieldset>
+                <legend>And here our custom fields</legend>
+
+                <div class="control-group">
+                    {{ form_label(form.children['user'].children['like_waffles']) }}
+                    <div class="controls">
+                        {{ form_widget(form.children['user'].children['like_waffles']) }}
+                    </div>
+                </div>
+
+            </fieldset>
+        </div><!-- .span4 -->
+    </div>
+
+    {{ form_rest(form) }}
+
     <div class="form-actions">
         <input type="submit" class="btn btn-primary" value="{{ 'profile.edit.submit'|trans({}, 'FOSUserBundle') }}" />
     </div>
