@@ -49,19 +49,26 @@
                                             </ul>
                                         </li>
                                         <li class="divider-vertical"></li>
+                                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                                         <li>
-                                            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                                             <p class="navbar-text pull-right">
-                                                {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
-                                                <a href="{{ path('fos_user_security_logout') }}">
-                                                    <i class="icon-user icon-white"></i> {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
-                                                </a>
+                                                {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}
                                             </p>
-                                            {% else %}
-                                            <a href="{{ path('fos_user_security_login') }}">
-                                                <i class="icon-user icon-white"></i> {{ 'layout.login'|trans({}, 'FOSUserBundle') }}
-                                            </a>
-                                            {% endif %}
+                                        </li>
+                                        <li class="divider-vertical"></li>
+                                        <li class="dropdown first">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-white"></i> User menu</a>
+                                            <ul class="dropdown-menu menu_level_1">
+                                                <li><a href="{{ path('fos_user_profile_show') }}"> See your profile</a></li>
+                                                <li><a href="{{ path('fos_user_resetting_request') }}"> Reset your password</a></li>
+                                                <li><a href="{{ path('fos_user_security_logout') }}">{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a></li>
+                                            </ul>
+                                        </li>
+                                        {% else %}
+                                        <li>
+                                            <a href="{{ path('fos_user_security_login') }}"><i class="icon-user icon-white"></i> {{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                                        </li>
+                                        {% endif %}
                                         </li>
                                     </ul>
                                 </div>
