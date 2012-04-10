@@ -65,3 +65,6 @@ fos_user:
     firewall_name: main
     user_class: FOS\UserBundle\Propel\UserProxy
     propel_user_class: Pixel\UserBundle\Model\User
+    profile:
+      form:
+        type: pixel_user_profile

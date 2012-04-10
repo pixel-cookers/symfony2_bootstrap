@@ -1,0 +1,6 @@
+services:
+    pixel_user.profile.form.type:
+        class: Pixel\UserBundle\Form\Type\ProfileFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: pixel_user_profile }
