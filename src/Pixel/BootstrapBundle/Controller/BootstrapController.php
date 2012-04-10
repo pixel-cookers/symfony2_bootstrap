@@ -1,25 +1,25 @@
 <?php
 
-namespace Pixel\CoreBundle\Controller;
+namespace Pixel\BootstrapBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-use Pixel\CoreBundle\Form\Type\ExampleFormsType;
-use Pixel\CoreBundle\Form\Type\ExampleChoiceFormType;
-use Pixel\CoreBundle\Form\Type\ExampleInlineFormType;
-use Pixel\CoreBundle\Form\Type\ExampleSearchFormType;
-use Pixel\CoreBundle\Form\Type\ExampleHorizontalFormType;
-use Pixel\CoreBundle\Form\Type\ExampleExtendedFormType;
-use Pixel\CoreBundle\Form\Type\ExampleExtendedViewFormType;
+use Pixel\BootstrapBundle\Form\Type\ExampleFormsType;
+use Pixel\BootstrapBundle\Form\Type\ExampleChoiceFormType;
+use Pixel\BootstrapBundle\Form\Type\ExampleInlineFormType;
+use Pixel\BootstrapBundle\Form\Type\ExampleSearchFormType;
+use Pixel\BootstrapBundle\Form\Type\ExampleHorizontalFormType;
+use Pixel\BootstrapBundle\Form\Type\ExampleExtendedFormType;
+use Pixel\BootstrapBundle\Form\Type\ExampleExtendedViewFormType;
 
 
 class BootstrapController extends Controller
 {
 
     /**
-     * @Route("/bootstrap/css", name="bootstrap_css")
+     * @Route("/css", name="bootstrap_css")
      * @Template()
      */
     public function cssAction()
@@ -28,7 +28,7 @@ class BootstrapController extends Controller
     }
 
     /**
-     * @Route("/bootstrap/forms", name="bootstrap_forms")
+     * @Route("/forms", name="bootstrap_forms")
      * @Template()
      */
     public function formsAction()
@@ -62,7 +62,7 @@ class BootstrapController extends Controller
     }
 
     /**
-     * @Route("/bootstrap/js", name="bootstrap_js")
+     * @Route("/js", name="bootstrap_js")
      * @Template()
      */
     public function jsAction()

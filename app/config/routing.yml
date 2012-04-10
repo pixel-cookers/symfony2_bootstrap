@@ -1,9 +1,4 @@
-PixelUserBundle:
-    resource: "@PixelUserBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-_welcome:
+_home:
     pattern:  /
     defaults: { _controller: PixelCoreBundle:Default:index }
 
@@ -11,6 +6,16 @@ PixelCoreBundle:
     resource: "@PixelCoreBundle/Controller/"
     type:     annotation
     prefix:   /
+
+PixelUserBundle:
+    resource: "@PixelUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+PixelBootstrapBundle:
+    resource: "@PixelBootstrapBundle/Controller/"
+    type:     annotation
+    prefix:   /bootstrap/
 
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"

@@ -1,8 +1,8 @@
 <?php
 
-namespace Pixel\CoreBundle\Model;
+namespace Pixel\BootstrapBundle\Model;
 
-use Pixel\CoreBundle\Model\om\BaseBookPeer;
+use Pixel\BootstrapBundle\Model\om\BaseBookPeer;
 
 
 /**
@@ -14,7 +14,7 @@ use Pixel\CoreBundle\Model\om\BaseBookPeer;
  * application requirements.  This class will only be generated as
  * long as it does not already exist in the output directory.
  *
- * @package    propel.generator.src.Pixel.CoreBundle.Model
+ * @package    propel.generator.src.Pixel.BootstrapBundle.Model
  */
 class BookPeer extends BaseBookPeer {
 

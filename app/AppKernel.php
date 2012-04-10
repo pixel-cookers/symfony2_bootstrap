@@ -19,14 +19,17 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new JMS\AopBundle\JMSAopBundle(),
 
-            new Pixel\CoreBundle\PixelCoreBundle(),
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
 
             // PropelBundle
             new Propel\PropelBundle\PropelBundle(),
 
             new FOS\UserBundle\FOSUserBundle(),
+
+            // Pixel Cookers's Bundles
             new Pixel\UserBundle\PixelUserBundle(),
+            new Pixel\BootstrapBundle\PixelBootstrapBundle(),
+            new Pixel\CoreBundle\PixelCoreBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

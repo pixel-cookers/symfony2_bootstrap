@@ -1,5 +1,5 @@
 <?php
-namespace Pixel\CoreBundle\Form\Type;
+namespace Pixel\BootstrapBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilder;
