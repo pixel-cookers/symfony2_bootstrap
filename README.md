@@ -7,7 +7,6 @@ A Symfony2 quick launch with basic configurations and often used code & bundles.
 ToDo :
 -----
 
-* Extend FOSUserBundle with a UserBundle for add fields to the model
 * Make a set of simple queries / CRUD for quick re-use / samples
 * Make a FixtureBundle for add some users/datas
 * Remove or find a use for the search bar...
@@ -20,6 +19,7 @@ ToDo :
 Done :
 -----
 
+* Extend FOSUserBundle with a UserBundle for add fields to the model
 * Extend FOSUserBundle with a UserBundle for override forms & templates
 * Add FOSUserBundle (install, settings & propel support)
 * Handle vendors with composer [Issue #1](https://github.com/pixel-cookers/symfony2_bootstrap/issues/1)
