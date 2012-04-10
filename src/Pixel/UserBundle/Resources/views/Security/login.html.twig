@@ -20,6 +20,13 @@
                     <fieldset>
                         <legend>You can sign in here</legend>
 
+                        {% if error %}
+                            <div class="alert alert-error" data-alert="alert">
+                                <a class="close" data-dismiss="alert" href="#">×</a>
+                                {{ error|trans({}, 'FOSUserBundle') }}
+                            </div>
+                        {% endif %}
+
                         <div class="control-group">
                             <label class="control-label" for="username">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
                             <div class="controls">
@@ -68,12 +75,3 @@
 
     {% endblock %}
 {% endblock %}
-
-{% block flashes %}
-    {% if error %}
-        <div class="alert alert-error" data-alert="alert">
-            <a class="close" data-dismiss="alert" href="#">×</a>
-            {{ error|trans({}, 'FOSUserBundle') }}
-        </div>
-    {% endif %}
-{% endblock flashes %}
