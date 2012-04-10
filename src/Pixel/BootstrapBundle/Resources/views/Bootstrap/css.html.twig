@@ -13,7 +13,7 @@
         <p class="lead">On top of the scaffolding, basic HTML elements are styled and enhanced with extensible classes to provide a fresh, consistent look and feel.</p>
         <div class="subnav">
             <ul class="nav nav-pills">
-                <li class="active"><a href="#typography">Typography</a></li>
+                <li><a href="#typography">Typography</a></li>
                 <li><a href="#code">Code</a></li>
                 <li><a href="#tables">Tables</a></li>
                 <li><a href="#forms">Forms</a></li>
@@ -1441,4 +1441,12 @@
         </div>
     </section>
 
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('bundles/pixelbootstrap/js/js.js') }}"></script>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet/less" type="text/css" href="{{ asset('bundles/pixelbootstrap/css/docs.css') }}">
 {% endblock %}
