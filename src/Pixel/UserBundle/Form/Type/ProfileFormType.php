@@ -39,7 +39,7 @@ class ProfileFormType extends BaseType
         $builder
             ->add('username')
             ->add('email', 'email')
-            ->add('like_waffles', 'checkbox')
+            ->add('like_waffles', 'checkbox', array('required'  => false))
         ;
     }
 }
