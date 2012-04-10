@@ -44,9 +44,9 @@
                                         <li class="dropdown first">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-exclamation-sign icon-white"></i> Bootstrap</a>
                                             <ul class="dropdown-menu menu_level_1">
-                                                <li><a href="{{ path("bootstrap_css") }}">CSS</a></li>
-                                                <li><a href="{{ path("bootstrap_forms") }}">Forms</a></li>
-                                                <li><a href="{{ path("bootstrap_js") }}">JS</a></li>
+                                                <li><a href="{{ path("bootstrap_css") }}"><i class="icon-font"></i> CSS</a></li>
+                                                <li><a href="{{ path("bootstrap_forms") }}"><i class="icon-check"></i> Forms</a></li>
+                                                <li><a href="{{ path("bootstrap_js") }}"><i class="icon-file"></i> JS</a></li>
                                             </ul>
                                         </li>
                                         <li class="divider-vertical"></li>
@@ -60,9 +60,9 @@
                                         <li class="dropdown first">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-white"></i> User menu</a>
                                             <ul class="dropdown-menu menu_level_1">
-                                                <li><a href="{{ path('fos_user_profile_show') }}"> See your profile</a></li>
-                                                <li><a href="{{ path('fos_user_resetting_request') }}"> Reset your password</a></li>
-                                                <li><a href="{{ path('fos_user_security_logout') }}">{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a></li>
+                                                <li><a href="{{ path('fos_user_profile_show') }}"><i class="icon-th-list"></i> See your profile</a></li>
+                                                <li><a href="{{ path('fos_user_resetting_request') }}"><i class="icon-repeat"></i> Reset your password</a></li>
+                                                <li><a href="{{ path('fos_user_security_logout') }}"><i class="icon-off"></i> {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a></li>
                                             </ul>
                                         </li>
                                         {% else %}
@@ -101,7 +101,7 @@
             <div class="row">
                 <div class="span12">
                     <div class="pull-right">
-                        <a href="#">Back to the top</a> <i class="icon-chevron-up"></i>
+                        <p><a href="#">Back to the top</a> <i class="icon-chevron-up"></i></p>
                     </div>
                 </div>
             </div>
