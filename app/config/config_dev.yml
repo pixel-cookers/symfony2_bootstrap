@@ -45,3 +45,16 @@ propel:
 #               settings:
 #                   charset:        { value: UTF8 }
 #                   queries:        { query: 'INSERT INTO BAR ('hey', 'there')' }
+
+twig:
+    debug:  true
+
+services:
+   twig.extension.text:
+       class: Twig_Extensions_Extension_Text
+       tags:
+           - { name: twig.extension }
+   twig.extension.debug:
+       class: Twig_Extensions_Extension_Debug
+       tags:
+           - { name: twig.extension }
