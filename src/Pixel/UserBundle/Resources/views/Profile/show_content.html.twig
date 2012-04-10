@@ -14,5 +14,15 @@
             <td>{{ 'profile.show.email'|trans({}, 'FOSUserBundle') }}</td>
             <td>{{ user.email }}</td>
         </tr>
+        <tr>
+            <td>Do you like waffles ?</td>
+            <td>
+                {% if user.getLikeWaffles %}
+                    Of course !
+                {% else %}
+                    Nope :s
+                {% endif %}
+            </td>
+        </tr>
     </tbody>
 </table>
