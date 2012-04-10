@@ -11,6 +11,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Pixel\UserBundle\Model\User;
 use Pixel\UserBundle\Model\UserQuery;
 
+use Pixel\BootstrapBundle\Model\Book;
+use Pixel\BootstrapBundle\Model\BookQuery;
+
 class FixturesCommand extends ContainerAwareCommand
 {
 	protected $userManager;
@@ -33,26 +36,14 @@ class FixturesCommand extends ContainerAwareCommand
 
         // Users
         UserQuery::create()->find()->delete();
-        $output->writeln("1/5 - User");
+        $output->writeln("1/2 - Users");
 
-        // Stats
-        //StatQuery::create()->find()->delete();
-        //$output->writeln("2/5 - Stat");
-
-        // StatsUser
-        //StatUserQuery::create()->find()->delete();
-        //$output->writeln("3/5 - StatUser");
-
-        // Log
-        //StatUserQuery::create()->find()->delete();
-        //$output->writeln("4/5 - Log");
-
-        // LogUser
-        //StatUserQuery::create()->find()->delete();
-        //$output->writeln("5/5 - LogUser");
+        // Books
+        BookQuery::create()->find()->delete();
+        $output->writeln("2/2 - Books");
 
         $this->createUsers($output);
-        //$this->createStats($output);
+        $this->createBooks($output);
         //$this->createStatsUser($output);
     }
     
@@ -100,6 +91,45 @@ class FixturesCommand extends ContainerAwareCommand
 
             $output->writeln($current . "/" . count($users) . " - " . $email);
         }
-    	
+    }
+
+    protected function createBooks(OutputInterface $output)
+    {
+        $output->writeln("");
+        $output->writeln("---------------------");
+        $output->writeln("|  Creating Books   |");
+        $output->writeln("---------------------\n");
+
+        $users = UserQuery::create()
+            ->find();
+
+        $books = array(
+            "The Lord of the Rings",
+            "The Hobbit",
+            "The Adventures of Tom Bombadil",
+            "Head First Networking",
+            "Head First HTML5 Programming",
+            "Head First WordPress",
+            "Head First Physics",
+            "Robot Dreams",
+            "The Complete Robot",
+            "The Winds of Change and Other Stories",
+            "I, Robot",
+            "I Can Has Cheezburger?",
+        );
+
+        foreach($books as $key => $book)
+        {
+            $current = $key + 1;
+            $title = $book;
+            $author = array_rand($users->toArray());
+
+            $newBook = new Book();
+            $newBook->setTitle($title);
+            $newBook->setAuthorId($author);
+            $newBook->save();
+
+            $output->writeln($current . "/" . count($books) . " - " . $title);
+        }
     }
 }
