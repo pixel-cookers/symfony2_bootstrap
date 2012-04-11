@@ -17,10 +17,24 @@
         <tr>
             <td>Do you like waffles ?</td>
             <td>
-                {% if user.getLikeWaffles %}
+                {% if user.likewaffles %}
                     Of course !
                 {% else %}
                     Nope :s
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>Books i like</td>
+            <td>
+                {% if user.books %}
+                <ul>
+                    {% for book in user.books %}
+                    <li>{{ book.title }}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                None :o
                 {% endif %}
             </td>
         </tr>
