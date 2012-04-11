@@ -34,13 +34,8 @@ class UserProxy extends Base
         return $this->user->getBooks();
     }
 
-    public function setBooks($value)
+    public function setBooks(\PropelCollection $books, \PropelPDO $con = null)
     {
-        return $this->user->setBooks($value);
-    }
-
-    public function AddBook($value)
-    {
-        return $this->user->addBook($value);
+        return $this->user->setBooks($books, $con);
     }
 }

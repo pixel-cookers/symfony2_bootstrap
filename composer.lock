@@ -65,12 +65,12 @@
         {
             "package": "propel/propel-bundle",
             "version": "dev-master",
-            "source-reference": "0.5"
+            "source-reference": "d3205f13ab8bcd59d1ab0e905efc24ef51c2e953"
         },
         {
             "package": "propel/propel1",
             "version": "dev-master",
-            "source-reference": "d6506a592f3b2a3f2411e07c1e184a4dde26e490",
+            "source-reference": "3d68575d18ab628371b3e6a4d51419e05c297e23",
             "alias": "1.6.9999999.9999999-dev"
         },
         {
@@ -115,7 +115,7 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "127cff0aa8b2a6f7e388f180e471f748e6a1dec3",
+            "source-reference": "0c57db17716d471b544e2a3897a8f0da2f08d271",
             "alias": "2.1.9999999.9999999-dev"
         },
         {
@@ -126,7 +126,7 @@
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "46ae99fa4c11f76248b12da647fe64399f860e82",
+            "source-reference": "fd634d1af20fb41dd4e9f7b23806513a6a6b8110",
             "alias": "1.7.9999999.9999999-dev"
         },
         {
