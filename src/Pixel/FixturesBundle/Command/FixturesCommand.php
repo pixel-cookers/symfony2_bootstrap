@@ -36,15 +36,19 @@ class FixturesCommand extends ContainerAwareCommand
 
         // Users
         UserQuery::create()->find()->delete();
-        $output->writeln("1/2 - Users");
+        $output->writeln("1/3 - Users");
 
         // Books
         BookQuery::create()->find()->delete();
-        $output->writeln("2/2 - Books");
+        $output->writeln("2/3 - Books");
+
+        // User/Books
+        BookQuery::create()->find()->delete();
+        $output->writeln("3/3 - User/Books");
 
         $this->createUsers($output);
         $this->createBooks($output);
-        //$this->createStatsUser($output);
+        $this->createUserBooks($output);
     }
     
     protected function createUsers(OutputInterface $output)
@@ -130,6 +134,35 @@ class FixturesCommand extends ContainerAwareCommand
             $newBook->save();
 
             $output->writeln($current . "/" . count($books) . " - " . $title);
+        }
+    }
+
+    protected function createUserBooks(OutputInterface $output)
+    {
+        $output->writeln("");
+        $output->writeln("--------------------------");
+        $output->writeln("|  Creating User/Books   |");
+        $output->writeln("--------------------------\n");
+
+        $users = UserQuery::create()
+            ->find();
+
+        $books = BookQuery::create()
+            ->find();
+
+        foreach($books as $key => $book)
+        {
+            $current = $key + 1;
+
+            // We loop on users and randomly add the current book to the "book i am reading" list of the user
+            foreach($users as $user) {
+                if(rand(0, 1)) {
+                    $user->addBook($book);
+                    $user->save();
+                }
+            }
+
+            $output->writeln($current . "/" . count($books) . " - " . $book->getTitle());
         }
     }
 }
