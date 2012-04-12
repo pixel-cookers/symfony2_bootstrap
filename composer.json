@@ -5,10 +5,6 @@
     },
     "repositories": [
         {
-            "type": "pear",
-            "url": "http://pear.phing.info"
-        },
-        {
             "type": "package",
             "package": {
                 "name": "willdurand/TypehintableBehavior",
@@ -58,7 +54,6 @@
         "twitter/bootstrap": "master",
         "propel/propel1": "1.6.x-dev",
         "willdurand/TypehintableBehavior": "0.1.0",
-        "pear-phing/phing": "2.4.9",
         "propel/propel-bundle": "dev-master",
         "friendsofsymfony/user-bundle": "dev-master"
     },

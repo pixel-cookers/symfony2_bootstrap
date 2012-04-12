@@ -1,5 +1,5 @@
 {
-    "hash": "60c6ad7b1b1e741d2390697910b2bb17",
+    "hash": "49a59f587405b869b0beb41d9fb90240",
     "packages": [
         {
             "package": "doctrine/common",
@@ -21,7 +21,7 @@
         {
             "package": "friendsofsymfony/user-bundle",
             "version": "dev-master",
-            "source-reference": "b706553b4f7784c56398088a0d050bd92dd6c4ac"
+            "source-reference": "6a892843f97d89ac7ef3d2b97c23c07076f7b7da"
         },
         {
             "package": "jms/aop-bundle",
@@ -52,11 +52,7 @@
         {
             "package": "mopa/bootstrap-bundle",
             "version": "dev-master",
-            "source-reference": "ced50a352d8796ada4d5449c290b8ea82b1db57f"
-        },
-        {
-            "package": "pear-phing/phing",
-            "version": "2.4.9"
+            "source-reference": "27c8470b0db7f31df6bd826793475a8597b67179"
         },
         {
             "package": "phing/phing",
@@ -115,7 +111,7 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "0c57db17716d471b544e2a3897a8f0da2f08d271",
+            "source-reference": "bf1131cc50d1295b7c4eb3fce8e23bc17f63c87e",
             "alias": "2.1.9999999.9999999-dev"
         },
         {
@@ -126,7 +122,7 @@
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "fd634d1af20fb41dd4e9f7b23806513a6a6b8110",
+            "source-reference": "58fbe0da4146608e085d7e67ebf2eae7aa8da19e",
             "alias": "1.7.9999999.9999999-dev"
         },
         {
