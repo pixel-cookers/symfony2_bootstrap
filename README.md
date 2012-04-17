@@ -7,8 +7,8 @@ A Symfony2 quick launch with basic configurations and often used code & bundles.
 ToDo :
 -----
 
+* Move code from BootstrapBundle to CoreBundle for easy use
 * Make a set of simple queries / CRUD for quick re-use / samples
-
 * Add qKnpMenuBundle
 * Add AvalancheImagineBundle
 * Add doc for installation and config of the bootstrap
