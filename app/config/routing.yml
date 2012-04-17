@@ -1,3 +1,8 @@
+PixelPropelBundle:
+    resource: "@PixelPropelBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 _home:
     pattern:  /
     defaults: { _controller: PixelCoreBundle:Default:index }

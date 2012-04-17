@@ -1,0 +1,35 @@
+{% extends 'PixelBootstrapBundle::layout.html.twig' %}
+
+{% block title %}Search results: {{ query }}{% endblock %}
+
+{% block query %}{{ query }}{% endblock %}
+
+{% block content_header '' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="span12">
+            <div class="hero-unit">
+                <h1>Oh hai!</h1>
+                <p>You searched for the expression <span class="label">{{ query }}</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span12">
+            <h2>Your search results</h2>
+            {% if results.count > 0 %}
+                <ul>
+                {% for result in results %}
+                    <li>{{ result }}</li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <p>No result for your research :'(</p>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

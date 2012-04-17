@@ -31,6 +31,7 @@ class AppKernel extends Kernel
             new Pixel\BootstrapBundle\PixelBootstrapBundle(),
             new Pixel\CoreBundle\PixelCoreBundle(),
             new Pixel\FixturesBundle\PixelFixturesBundle(),
+            new Pixel\PropelBundle\PixelPropelBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

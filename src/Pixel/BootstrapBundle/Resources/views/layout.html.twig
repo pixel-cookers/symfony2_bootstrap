@@ -30,8 +30,8 @@
                                 </a>
                                 <a class="brand" href="{{ path("core_home") }}">Bootstrap</a>
                                 <div class="nav-collapse">
-                                    <form class="navbar-search pull-left">
-                                        <input type="text" required="required" placeholder="Search..." class="input-medium search-query" >
+                                    <form class="navbar-search pull-left" action="{{ path('propel_search') }}">
+                                        <input type="text" required="required" placeholder="Search..." class="input-medium search-query" name="q" value="{% block query %}{% endblock %}">
                                     </form>
 
                                     <ul class="nav">
