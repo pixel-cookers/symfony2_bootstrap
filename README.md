@@ -8,7 +8,7 @@ ToDo :
 -----
 
 * Make a set of simple queries / CRUD for quick re-use / samples
-* Remove or find a use for the search bar...
+
 * Add qKnpMenuBundle
 * Add AvalancheImagineBundle
 * Add doc for installation and config of the bootstrap
@@ -17,6 +17,7 @@ ToDo :
 Done :
 -----
 
+* Remove or find a use for the search bar...
 * Make a FixtureBundle for add some users/datas
 * Extend FOSUserBundle with a UserBundle for add fields to the model
 * Extend FOSUserBundle with a UserBundle for override forms & templates
