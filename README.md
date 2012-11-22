@@ -1,8 +1,8 @@
 What is it ?
 ============
-A Symfony2 quick launch with basic configurations and often used code & bundles. Includes Twitter Bootstrap for layout & sexy ;)
+A Symfony2 quick launch with basic configurations to quickly start your project. Includes Twitter Bootstrap for layout & sexy ;)
 
-**Warning: This bootstrap is not ready for use at the moment, I will keep to update it and will tag it when ready for production.**
+**Warning: This bootstrap is not ready and was not updated for while so i don't recommend using it for now. I will try to update it as soon as possible.**
 
 ToDo :
 -----
